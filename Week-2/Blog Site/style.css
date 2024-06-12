@@ -1,0 +1,94 @@
+
+/* General Start*/
+
+ *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .jost {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+/* General End */
+
+/* Navbar Start */
+
+  .navbar {
+    background-color: #ffb026;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+  h1 {
+    color: black;
+    float: left;
+    font-size: xx-large;
+    display: inline;
+    margin-left: 150px;
+    margin-top: 25px;
+  }
+
+  .navbar ul li a {
+    font-size: x-large;
+    margin: 15px;
+    background-color: #ffb026;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #dddddd;
+    transition: 0.5s;
+  }
+
+  .navbar ul li {
+    float: right;
+    display: inline;
+    margin-top: 35px;
+    margin-right: 35px;
+  }
+
+  /* Navbar End */
+
+  h2 {
+    font-size: 65px;
+  }
+
+  body {
+    margin-top: 150px;
+    background-color: #dddddd;
+    text-align: center;
+  }
+
+  .article {
+    display: block;
+  }
+
+  .paragraph {
+    height: 150px;
+    width: 550px;
+    display: inline-block;
+    font-family: "Manrope", sans-serif;
+  }
+
+  .successions {
+    display: inline-block;
+    margin-top: 1px;
+    margin-left: 60px;
+  }
