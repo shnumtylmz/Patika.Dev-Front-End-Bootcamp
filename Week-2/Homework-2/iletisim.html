@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABRA Bar</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+      </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <h1 class="robotoslabnav">ABRA Bar</h1>
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="hakkinda.html">Hakkımızda</a></li>
+        <li><a href="servisler.html">Servisler</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contact Us Start -->
+     <div id="contactus">
+    <div id="contactussectionone">
+      <h1>Rezervasyon yaptırın!</h1>
+      <img src="10.jpg" alt="bar" height="600px" width="800px">
+
+  </div>
+  <div id="contactussectiontwo">
+    <p>
+        Rezervasyon yaparak barda unutulmaz bir gece geçirin! Sıra beklemeden, en iyi masada oturmanın keyfini çıkarın. Özel indirimler, hızlı servis ve size özel ikramlarla ayrıcalıklı hissedin. Eğlencenizi garanti altına almak için hemen rezervasyon yapın ve rahatlığın tadını çıkarın!</p>
+      </div>
+      <div id="contactussectionthree">
+        <a href="tel:+905442223344"><i>Telefonla rezervasyon için...</i></a>
+        <br>
+        <a href="mailto:abrabar@outlook.com"><i>Mail ile rezervasyon için...</i></a>
+      </div>
+    </div>
+<!-- Reservation Start -->
+<form>
+  <fieldset>
+    <legend>Reservasyon için:</legend>
+    <div class="ressection">
+      <div class="usersinfos">
+        <label for="fullname">İsim ve Soyisim:</label>
+        <input type="text" id="fullname" placeholder="Hakan Yavuz" />
+      </div>
+      <div class="usersinfos">
+        <label for="date">Tarih:</label>
+        <input type="date" />
+      </div>
+      <div class="usersinfos">
+        <label for="date">Saat:</label>
+        <input type="datetime" placeholder="20.00" />
+      </div>
+      <div class="usersinfos">
+        <label for="people">Kaç kişi olacaksınız?</label>
+        <!-- Reservasyon sayısı  -->
+        <input type="number" placeholder="5" />
+      </div>
+      <div class="usersinfos">
+        <label for="chair"
+          >Özellikle oturmak istediğiniz bir yer var mı?</label
+        >
+        <select id="chair">
+          <option value="">Seçiniz...</option>
+          <option value="">Farketmez</option>
+          <optgroup label="Salon">
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+            <option value="S4">S4</option>
+            <option value="S5">S5</option>
+            <option value="S6">S6</option>
+          </optgroup>
+          <optgroup label="Bahçe">
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="B3">B3</option>
+            <option value="B4">B4</option>
+            <option value="B5">B5</option>
+            <option value="B6">B6</option>
+            <option value="B7">B7</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <button type="submit">Onayla</button>
+        <button type="reset">Vazgeç</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+<!-- Reservation End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer1">
+        <textarea
+          for="complaintandopinion"
+          placeholder="Şikayet ve görüşleriniz..."
+        ></textarea>
+        <button type="submit" id="complaintandopinion">Gönder</button>
+      </div>
+      <h1 class="robotoslabfooter">ABRA Bar</h1>
+      <div class="footernav">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hakkinda.html">Hakkımızda</a></li>
+          <li><a href="servisler.html">Servisler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

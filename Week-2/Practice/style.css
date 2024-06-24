@@ -1,0 +1,393 @@
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none; 
+}
+
+body{
+  height: 200vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/* Fonts Start */
+
+.karla {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .bebas {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+/* Fonts End */
+
+/* Navbar Start */
+
+nav{
+    background-color: #32a852;
+    top: 0;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+nav h1{
+    font-size: 67px;
+    float: left;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+nav ul{
+    float: right;
+    margin-top: 40px;
+}
+
+nav ul li{
+    flex-direction: row;
+    display: inline;
+    margin-right: 50px;
+    
+}
+
+nav ul li a{
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+nav ul li a:hover{
+    background-color: #dddddd;
+    color: black;
+    transition: 0.7s;
+    border-radius: 50%;
+}
+
+/* Navbar End */
+
+/* Body Start */
+
+
+.entrance{
+  background: 
+  linear-gradient(rgba(95, 95, 95, 0.5), rgba(0, 0, 0, 0.5)),
+  url(hall.jpg); 
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.entrancetext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 160px
+}
+
+.entrancetext h1{
+  font-size: 100px;
+  align-items: center;
+}
+
+.entrancetext p{
+  text-transform: uppercase;
+  height: 200px;
+  width: 500px;
+  font-size: 24px;
+}
+
+.homepagesectiontwo{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+}
+
+.servicesrow:hover{
+opacity: 1;
+}
+
+.servicesrow{
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 400px;
+  opacity: 0.8;
+}
+
+.box-shadow{
+  box-shadow: 0px 0px 10px black;
+}
+
+.servicesrow img{
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+.homepagesectionthree{
+  display: flex;
+  flex-direction: column;
+  background-color: #343224;
+  padding: 50px;
+}
+
+.homepagesectionthree h3{
+  color: #32a852;
+}
+
+.homepagesectionthree p{
+  margin: 0 auto;
+  padding: 30px;
+  color: white;
+  max-width: 400px;
+}
+
+
+.homepagesectionthree .separator{
+  display: table;
+  width: 2px;
+  height: 48px;
+  margin: 0 auto 48px;
+  background-color: #32a852;
+}
+
+.firstdiv{
+  background-color: #58b871;
+
+}
+
+.secdiv{
+  background-color: #c96033;
+}
+
+.thirddiv{
+  background-color: #b44080;
+}
+
+.fourthdiv{
+  background-color: #3e6ccf;
+}
+
+.fifthdiv{
+  background-color: #d83838;
+}
+
+.homepagesectionthreerow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homepagesectionthreerow div{
+  height: 250px;
+  width: 250px;
+}
+
+.homepagesectionthreerow h6{
+  font-size: large;
+  margin-top: 30px;
+}
+
+.homepagesectionfourth{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  margin: 40px;
+}
+
+.homepagesectionfourth h3{
+  font-size: 50px;
+}
+
+.homepagesectionfourthtext{
+  width: 800px;
+  padding: 10px;
+}
+
+.homepagesectionfourth p{
+  padding: 1px;
+}
+
+/* Body End */
+
+/* Footer Start */
+
+footer{
+  background-color: #32a852;
+  height: 200px;
+}
+
+footer h2{
+  font-size: 60px;
+}
+
+.footersection{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.textarea textarea{
+  height: 100px;
+  width: 300px;
+}
+
+.footernav ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.footernav ul li{
+  padding: 3px;
+  margin: 3px;
+}
+
+.footernav ul li a{
+  color: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.footernav ul li a:hover{
+  background-color: white;
+  color:#343224;
+  transition: 0.9s;
+}
+
+.separator{
+  display: table;
+  width: 2px;
+  height: 98px;
+  margin: 0 10px 48px;
+  background-color: #383838;
+}

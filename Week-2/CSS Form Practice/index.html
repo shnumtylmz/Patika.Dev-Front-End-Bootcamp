@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form-survey" action="">
+        <h1>CSS Form Practice</h1>
+        <div class="form-group">
+          <label for="name">İsim ve Soyisim: </label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-Mail: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Yaşınız: </label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            max="100"
+            min="18"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="city">Şehir: </label>
+          <select name="city" id="city">
+            <option value="empty" disabled selected>Seçiniz...</option>
+            <option value="Eskişehir">Eskişehir</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Ankara">Ankara</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+            <label for="sex">Cinsiyet: </label>
+            <select name="sex" id="sex" required>
+                <option value="empty" disabled selected>Seçiniz...</option>
+                <option value="male">Erkek</option>
+                <option value="female">Kadın</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="faculty">Fakülte: </label>
+            <select name="faculty" id="faculty" required>
+                <option value="communication">İletişim Fakültesi</option>
+                <option value="iktisat">İktisat Fakültesi</option>
+                <option value="engineer">Mühendislik Fakültesi</option>
+                <option value="education">Eğitim Fakültesi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Görüşleriniz: <label>
+                <textarea name="comments" id="comments" placeholder="Bize yazın..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" id="submit" value="Gönder">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

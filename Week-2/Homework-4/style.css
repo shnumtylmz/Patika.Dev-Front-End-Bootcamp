@@ -1,0 +1,185 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: #ffca37;
+}
+
+.separator{
+    width: 1px;
+    height: 100px;
+    background-color: #333;
+    margin-left: 935px;
+    margin-top: 50px;
+}
+
+.footer-separator{
+    width: 1px;
+    height: 100px;
+    background-color: #ffca37;
+
+}
+
+/* FOOTER START */
+
+header{
+    background-color: #333;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar ul li{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li a{
+    color: #333;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: #333;
+    transition: 0.6s;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER END */
+
+/* BODY START */
+
+#title{
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#img-section{
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+#img-section img{
+    margin: 20px;
+}
+
+#quotes{
+    font-size: 24px;
+}
+
+#home-page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* BODY END */
+
+/* SECOND PAGE */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 800px;
+    margin-top: 150px;
+    margin-left: 550px;
+}
+
+.about-title{
+    text-align: center;
+    margin: 20px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+#about-para{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#works-content{
+    margin-top: 80px;
+}
+
+.works{
+    text-align: center;
+}
+
+.works ul li{
+    margin: 5px;
+}
+
+
+/* SECOND-PAGE-END */
+
+/* FOOTER START */
+
+#footer{
+    background-color:#333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-nav ul li{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li a{
+    color: #333;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-nav ul li a:hover{
+    color: white;
+    background-color: #333;
+    transition: 0.6s;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .userinfo{
+            margin: 2px;
+            padding: 2px;
+        }
+        label, input{
+            padding: 2px;
+            margin:2px;
+        }
+        button{
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Practice</h1>
+    <fieldset>
+        <legend>Merhaba! Lütfen bilgilerinizi girin.</legend>
+        <div class="userinfo">
+            <label for="name">İsim :</label>       
+            <input type="text" id="name">
+            <br>
+            <label for="surname">Soyad :</label>
+            <input type="text" id="surname">
+            <br>
+            <label for="email">E-Mail</label>
+            <input type="email">
+            <br>
+            <label for="password">Şifre :</label>
+            <input type="password">
+            <label for="gender">Cinsiyet :</label>
+            <input type="radio" name="gender" value="male">Erkek
+            <input type="radio" name="gender" value="female">Kadın
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Kişisel Bilgilerinizi girin...</legend>
+        <div>
+            <label for="city">Şehir:</label>
+            <select>
+                <option value="">Seçiniz...</option>
+                <optgroup label="Anadolu">
+                    <option value="26">Eskişehir</option>
+                    <option value="34">Ankara</option>
+                    <option value="42">Konya</option>
+                </optgroup>
+                <optgroup label="Doğu Anadolu">
+                    <option value="21">Diyarbakır</option>
+                    <option value="62">Tunceli</option>
+                    <option value="36">Kars</option>
+                </optgroup>
+                <optgroup label="Ege">
+                    <option value="35">İzmir</option>
+                    <option value="48">Muğla</option>
+                    <option value="09">Aydın</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="usermessage">Hakkınızda bir şeyler yazınız...</label>
+            <textarea name="usermessage" id="usermessage"></textarea>
+        </div>
+    </fieldset>
+    <button type="submit">Onayla</button>
+    <button type="reset">Sıfırla</button>
+</body>
+</html>

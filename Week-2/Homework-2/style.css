@@ -1,0 +1,246 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+.robotoslabnav {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: xx-large;
+  display: inline;
+  margin-left: 15%;
+  margin-top: 3px;
+  color: wheat;
+}
+/* Navbar */
+
+nav{
+    top: 0;
+    background-color: #870017;
+    position: fixed;
+    display:block;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 15%;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.80s;
+}
+
+/* Navbar End */
+
+/* Introducing start */
+
+#introducing{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#introducing h1{
+    font-size: 60px;
+}
+
+#introducing p{
+    font-size: 25px;
+}
+
+/* Introducing End */
+
+/* Reservation Start */
+
+legend{
+    font-size: xx-large;
+}
+
+.ressection{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.usersinfos{
+    margin: 10px;
+    padding: 10px;
+}
+
+button{
+    font-size: larger;
+    background-color: #870017;
+    color: white;
+}
+
+button:hover{
+    background-color: azure;
+    color: black;
+}
+
+/* Reservation End */
+
+/* Footer Start */
+
+footer{
+    background-color: #870017;
+    height: 250px;
+    bottom: 0;
+    width: 100%;
+}
+
+.robotoslabfooter {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large;
+    display: inline;
+    margin-left: 350px;
+    margin-top: 20px;
+    color: wheat;
+  }
+
+.footer1{
+    float: left;
+    
+}
+.footer1 textarea{
+    height: 100px;
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.footernav{
+    float: right;
+    margin-right:  15%;
+    text-decoration: none;
+}
+
+.footernav ul{
+    text-decoration: none;
+}
+
+.footernav ul li{
+    margin: 10px;
+    padding: 10px;
+}
+
+.footernav ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+}
+
+.footernav ul li a:hover{
+background-color: white;
+color: black;
+transition: 0.80s;
+}
+
+/* Footer End */
+
+/* Hakkında Start */
+
+#aboutmesection{
+    margin-top: 100px;
+    font-family: Verdana;
+    text-align: center;
+    width: 800px;
+    margin-left: 500px;
+}
+
+/* Hakkında End */
+
+/* Iletısım Start */
+
+#contactus{
+    margin-top: 150px;
+    display: flex;
+    position: relative;
+}
+#contactus img{
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+#contactussectionone h1{
+    margin-left: 145px;
+}
+
+#contactussectiontwo{
+    margin-top: 200px;
+    height: 500px;
+    width: 500px;
+    margin-left: 150px;
+}
+
+#contactussectiontwo p{
+    font-size: x-large;
+}
+
+#contactussectionthree{
+    margin-top: 350px;
+    margin-right: 50px;
+}
+
+#contactussectionthree a{
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+#contactussectionthree a:hover{
+    background-color: #870017;
+    color: wheat;
+}
+
+/* Iletisim Finish */
+
+/* Services Start */
+
+#wholeservicessection{
+    text-align: center;
+    width: 100%;
+}
+
+#servicessection{
+    margin-top: 100px;
+}
