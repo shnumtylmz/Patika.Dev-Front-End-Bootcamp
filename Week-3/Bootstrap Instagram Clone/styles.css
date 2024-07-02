@@ -1,0 +1,168 @@
+body{
+    background-color: #ffffff;
+}
+
+.titles{
+    font-weight: 600;
+}
+
+/* NAVBAR START */
+nav i{
+    color: black;
+}
+
+.logo{
+    margin-left: 192px;
+}
+
+input{
+    margin-left: 5px;
+}
+
+input[type="text"]{
+    text-align: center;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    opacity: 0.5;
+    color: black;
+}
+
+.navbar-bars{
+    display: none;
+}
+
+/* NAVBAR END */
+
+/* MAIN START */
+
+
+/* SECTION-1 */
+
+#section-1{
+    border: 1px solid black;
+    height: 130px;
+}
+
+.section-1-names{
+    font-size: 12px;
+}
+
+.story-img{
+    border: 2px solid rgb(145, 0, 0);
+}
+
+.list-group-item{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* SECTION-1 END */
+
+/* SECTION-2 START */
+
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-heade{
+    background-color: #fff;
+}
+
+
+.card-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.content-comments{
+    font-size: 14px;
+}
+
+/* SECTION-2 END */
+
+/* SIDEBAR */
+
+
+
+
+/* RESPONSIVE */
+@media (min-width: 1400px){
+    /* I preferred to remove the list items from the page when making them responsive because they were overflowing. */
+    .story-list li:nth-child(n+6) {
+        display: none; /* Removed the extra / */
+    }
+    .story-list {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    /* I preferred to remove the list items from the page when making them responsive because they were overflowing. */
+    .story-list li:nth-child(n+5) {
+        display: none; /* Removed the extra / */
+    }
+    .story-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    /* I preferred to remove the list items from the page when making them responsive because they were overflowing. */
+    .story-list li:nth-child(n+4) {
+        display: none; /* Removed the extra / */
+    }
+    .story-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* I preferred to remove the list items from the page when making them responsive because they were overflowing. */
+    .story-list li:nth-child(n+3) {
+        display: none; /* Removed the extra / */
+    }
+    .story-list {
+        justify-content: center;
+    }
+    .side-bar-user img {
+        display: none;
+    }
+    .nav-links a i{
+        display: none;
+    }
+    .navbar-bars {
+        display: block;
+    }
+
+}
+
+@media (max-width: 576px) {
+    /* I preferred to remove the list items from the page when making them responsive because they were overflowing. */
+    .story-list li:nth-child(n+2) {
+        display: none; /* Removed the extra / */
+    }
+    .story-list {
+        justify-content: center;
+    }
+    .side-bar-user img {
+        display: none;
+    }
+    .nav-links a i{
+        display: none;
+    }
+    .navbar-bars {
+        display: block;
+    }
+}
+
