@@ -6,6 +6,8 @@ body{
     font-weight: 600;
 }
 
+
+
 /* NAVBAR START */
 nav i{
     color: black;
@@ -37,6 +39,9 @@ input::placeholder{
 
 /* MAIN START */
 
+main{
+    max-height: 200px !important;
+}
 
 /* SECTION-1 */
 
@@ -92,7 +97,12 @@ input::placeholder{
 
 /* SIDEBAR */
 
-
+aside{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 100;
+}
 
 
 /* RESPONSIVE */
