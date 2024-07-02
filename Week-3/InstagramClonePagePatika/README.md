@@ -1,0 +1,1 @@
+### This project is designed as an assignment for Patika.Dev. The assignment requires modifications to be made on the prepared codes. You can access the file prepared according to the requests. HTML and CSS Bootstrap were used in the assignment. The main purpose of the assignment is to practice Bootstrap.
