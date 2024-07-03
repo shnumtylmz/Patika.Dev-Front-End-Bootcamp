@@ -1,0 +1,54 @@
+.card{
+    height: auto;
+    width: auto;
+}
+
+.comments{
+    width: auto;
+    height: auto;
+}
+
+.sidebar-section{
+    margin-top: 90px;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+
+
+@media (min-width: 576px) { 
+    .sidebar-section{
+        display:none;
+    }
+ }
+
+
+@media (min-width: 768px) {
+    .sidebar-section{
+    display:none;
+}  }
+
+
+@media (min-width: 992px) {  
+    .sidebar-section{
+    display:none;
+}}
+
+
+@media (min-width: 1200px) { 
+    .sidebar-section{
+        display:none;
+    }
+ }
+
+
+@media (min-width: 1400px) {  
+    .sidebar-section{
+        display:block;
+    }
+}
