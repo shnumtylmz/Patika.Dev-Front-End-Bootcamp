@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-300">
+    <!-- NAVBAR START -->
+    <div class="flex justify-center my-2 h-11">
+      <nav
+        class="w-11/12 bg-white flex justify-between items-center rounded-xl"
+      >
+        <div>
+          <h2 class="font-extrabold tracking-widest ml-4">Logo</h2>
+        </div>
+        <div>
+          <ul class="mr-4">
+            <a class="m-1" href="">Home</a>
+            <a class="m-1" href="">About Me</a>
+            <a class="m-1" href="">Contact</a>
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-1.5 me-2 dark:bg-blue-600 dark:hover:bg-blue focus:outline-none dark:focus:ring-blue-800"
+            >
+              Sign up
+            </button>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- WELCOME SECTION -->
+
+    <section id="welcome" class="mt-16 flex justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-11/12">
+        <div class="text-center bg-white rounded p-8 content-center">
+          <h6 class="text-blue-600 mt-12">Mamba design system</h6>
+          <h1 class="text-6xl mt-6 font-bold">Build it with Mamba</h1>
+          <p class="mt-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, ab?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, eos?
+          </p>
+          <div class="mt-6">
+            <label for="name" class="text-m font-medium text-gray-900">Name :</label>
+            <input
+              type="text"
+              id="name"
+              class="m-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="text-m font-medium text-gray-900">E-mail :</label>
+            <input
+              type="email"
+              id="email"
+              class="m-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="tonymontana@gmail.com"
+              required
+            />
+          </div>
+          <button
+            type="button"
+            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg w-2/6 text-sm px-5 py-2.5 mt-6 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+          >
+            Sign Up
+          </button>
+        </div>
+    
+        <div class="w-full flex justify-center">
+          <img
+            class="rounded w-full h-auto"
+            src="https://picsum.photos/id/110/800/600"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- WELCOME SECTION END -->
+
+    <!-- ABOUT US SECTION START -->
+
+    <section id="aboutus" class="mt-12">
+      <div class="text-center">
+        <h3 class="text-blue-600 text-xl">HOW IT WORKS</h3>
+        <h2 class="text-3xl mb-7">Building with Mamba is simple</h2>
+      </div>
+    
+      <div class="flex justify-center my-2">
+        <div class="flex justify-around flex-wrap w-10/12">
+          <div class="bg-white p-4 m-2 h-auto w-full sm:w-96 rounded">
+            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">1</span>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae?
+            </p>
+          </div>
+          <div class="bg-white p-4 m-2 h-auto w-full sm:w-96 rounded">
+            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2</span>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae?
+            </p>
+          </div>
+          <div class="bg-white p-4 m-2 h-auto w-full sm:w-96 rounded">
+            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">3</span>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae?
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="flex justify-center mt-28 mr-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 gap-8">
+          <div class="flex justify-center">
+            <img class="h-72 w-auto rounded" src="https://picsum.photos/id/54/600/400" alt="">
+          </div>
+          <div class="bg-white rounded flex flex-col text-center w-auto h-72 p-6">
+            <img class="rounded-full ml-auto mr-auto mt-6" src="https://picsum.photos/id/541/70/70" alt="">
+            <h3 class="italic p-5">
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, reiciendis. Iusto, reprehenderit! Maiores."
+            </h3>
+            <p class="text-gray-400">Leroy Jenkins</p>
+            <p class="text-gray-400">CEO of Company Co.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- ABOUT US SECTION END -->
+
+    <!-- PROJECTS SECTION START -->
+
+    <section class="flex justify-center mt-7">
+      <div class="w-8/12 bg-white p-4 rounded">
+        <h1 class="text-3xl font-bold">Create with us</h1>
+        <p class="p-7">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          repellendus incidunt suscipit in aliquid earum cumque dignissimos
+          exercitationem, a assumenda! Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Qui architecto earum quas neque hic? Exercitationem
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in,
+          omnis id distinctio quisquam quam earum, sed at aspernatur expedita
+          vel recusandae, voluptas fugit dolorem error sapiente eos cumque
+          nesciunt.
+        </p>
+      </div>
+    </section>
+
+    <div class="flex justify-center mt-16">
+      <div class="w-8/12">
+        <section class="grid grid-cols-2 bg-white rounded">
+          <div>
+            <img class="rounded" src="https://picsum.photos/id/100/600/400" alt="" />
+          </div>
+          <div class="ml-6 mt-8">
+            <span
+              class="inline-flex items-center rounded-md bg-blue-300 px-2 py-1 text-lg font-xl text-blue-700 ring-1 ring-inset ring-blue-700/10"
+              >Bussiness</span
+            >
+            <h4 class="mt-8">
+              Curating a workplace that inspires team movement
+            </h4>
+            <div class="mt-40">
+              <p class="text-slate-500">November 30, 2020</p>
+              <p class="text-slate-500">By Leroy Jenkins</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="flex justify-center mt-16">
+      <div class="w-11/12">
+        <div class="flex flex-wrap justify-between">
+          <div class="bg-white m-2 p-2 h-28 flex-1 min-w-[300px] text-center content-center rounded">
+            <p><strong>Panel-based blocks.</strong> Flexible panels that are perfect for building functional layouts.</p>
+          </div>
+          <div class="bg-white m-2 p-2 h-28 flex-1 min-w-[300px] text-center content-center rounded">
+            <p><strong>Responsive design.</strong> Panels look great no matter the device.</p>
+          </div>
+          <div class="bg-white m-2 p-2 h-28 flex-1 min-w-[300px] text-center content-center rounded">
+            <p><strong>Premium support.</strong> Join over 50,000 satisfied customers who use our templates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="flex ml-auto mr-auto mt-16 bg-white h-5/6 w-11/12 rounded">
+      <div class="content-center p-6 text-center ml-auto mr-auto">
+        <h1 class="font-bold text-xl tracking-wide">Our team is here to help you.</h1>
+        <a class="underline" href="">Meet our crew</a>
+        <img class="mt-6" src="https://picsum.photos/id/189/800/400" alt="">
+      </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION END -->
+
+    <!-- FOOTER START -->
+
+    <footer class="ml-auto mr-auto flex justify-between items-center bg-white w-11/12 mt-8 h-24 rounded">
+      <div>
+      <h1 class="ml-6 font-bold font-xl">Mamba</h1>
+    </div>
+    <div class="mr-6">
+      <ul>
+        <i class="fa-solid fa-square-envelope"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+      </ul>
+    </div>
+    </footer>
+
+
+
+<script src="https://kit.fontawesome.com/e1bde2bc89.js" crossorigin="anonymous"></script>
+  </body>
+</html>
