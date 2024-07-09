@@ -2,7 +2,7 @@
 
 This project demonstrates how to create a responsive landing page with a focus on a promotional card for an e-book called "Trendybook". The page includes a navbar, main content with product details, and a testimonial section.
 
-![CSS Practice](CSS Practice.png)
+![CSS Practice](CSSPractice.png)
 
 
 ## Table of Contents
