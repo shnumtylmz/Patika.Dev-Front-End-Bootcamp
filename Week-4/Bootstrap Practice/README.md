@@ -17,7 +17,9 @@ This is a responsive HTML template built using Bootstrap 5. It features a navbar
 
 ## Demo
 
-You can view a live demo of the template ![Bootstrappractice](bootstrappracitce.png).
+You can view a live demo of the template
+![bootstrap pracitce](bootstrappractice.png)
+
 
 ## Technologies Used
 
