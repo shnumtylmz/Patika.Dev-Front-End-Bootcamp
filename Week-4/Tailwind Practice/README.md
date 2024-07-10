@@ -32,9 +32,8 @@ This project is a responsive website built using HTML, CSS (with Tailwind CSS), 
 
 ## Setup Instructions
 
-1. Clone the repository: [`git clone <repository-url>`](https://github.com/shnumtylmz/Patika.Dev-Front-End-Bootcamp/tree/main/Week-4)
-2. Navigate to the project directory.
-3. Open `index.html` in your browser.
+1. Navigate to the project directory.
+2. Open `index.html` in your browser.
 
 ## Usage
 
