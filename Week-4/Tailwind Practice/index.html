@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      .hero-section {
+        height: 100vh;
+        background-image: url(pexels-tomfisk-1483880.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .get-involved-section {
+        height: 400px;
+        background-image: url(pexels-quang-nguyen-vinh-222549-2165688.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      @media (max-width: 768px) {
+        .navbar-brand ul {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO SECTİON -->
+    <div class="hero-section">
+      <nav class="flex justify-between">
+        <div class="navbar-brand text-white flex mx-12">
+          <h4 class="m-2 text-xl font-bold">Agriswara</h4>
+
+          <ul class="text-white flex">
+            <li class="m-3"><a href="#">Services</a></li>
+            <li class="m-3"><a href="#">Category</a></li>
+            <li class="m-3"><a href="#">Article</a></li>
+            <li class="m-3"><a href="#">About Us</a></li>
+            <li class="m-3"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mx-24 flex">
+          <button
+            id="mobile-menu-toggle"
+            class="block lg:hidden m-3 bg-white rounded-xl p-3"
+          >
+            Menu
+          </button>
+          <button class="m-3 backdrop-blur rounded-xl p-3" type="submit">
+            Sign In
+          </button>
+          <button class="m-3 bg-white rounded-xl p-3" type="submit">
+            Sign Up
+          </button>
+        </div>
+      </nav>
+
+      <div class="text-white mt-12 ml-8 w-4/6">
+        <h6 class="backdrop-blur inline-block rounded-xl p-1">
+          Announcing new Features 2.0
+          <i class="fa-solid fa-right-long ml-2"></i>
+        </h6>
+        <h1 class="font-bold text-6xl">
+          Driving Agricultural Evolution With Innovation
+        </h1>
+        <p class="mt-5">
+          Innovation is driving the evolution of agricultural for greater
+          productivity and sustainabilty.
+        </p>
+
+        <button class="bg-green-500 p-2 rounded-xl mt-5 mx-3">
+          Join Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="rounded-xl bg-white p-2 text-black mx-3">
+          Learn Services
+        </button>
+      </div>
+
+      <div>
+        <button
+          class="bg-white p-3 rounded-xl bottom-0 right-0 absolute mb-4 mr-4"
+        >
+          Explore More <i class="fa-regular fa-circle-down"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+      <div class="flex justify-around mt-4 text-gray-500 flex-wrap">
+        <div class="mx-2">
+          <p>Trusted by thousand companies in the world</p>
+        </div>
+        <div class="mx-2">
+          <p><i class="fa-brands fa-evernote"></i>Evernote</p>
+        </div>
+        <div class="mx-2">
+          <p><i class="fa-brands fa-amazon"></i>Amazon</p>
+        </div>
+        <div class="mx-2">
+          <p><i class="fa-solid fa-square-root-variable"></i> Airtable</p>
+        </div>
+        <div class="mx-2">
+          <p>Gumroad</p>
+        </div>
+        <div class="mx-2">
+          <p>Notion</p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-3xl md:text-lg sm:text-sm text-justify xl:mx-96 lg:mx-96 md:mx-48 sm:mx-24 mt-6">
+          We Provide a variety of services that are flexible and tailored to
+          your needs. We are commited to providing
+          <span class="text-gray-500"
+            >the best experince and ensuring unmatched customer
+            satisfaction</span
+          >
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-3 mt-12">
+        <div class="ml-12">
+          <ul>
+            <li class="m-4"><a href="#">//All</a></li>
+            <li class="m-4"><a href="#">//Company</a></li>
+            <li class="m-4"><a href="#">//Individual</a></li>
+          </ul>
+        </div>
+
+        <div class="mr-28 col-span-2">
+          <h3>Benefits of Individual's</h3>
+          <div class="card mt-12 flex">
+            <div>
+              <h5 class="text-lg font-bold">01</h5>
+            </div>
+            <div>
+              <p class="ml-6 text-lg">Agricultural Consumers</p>
+              <p class="mx-10 text-gray-600">
+                Farmers, fish farmers, fishermen and livestock breeders who
+                carry out cultivation activities.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-up-long"></i>
+            </div>
+          </div>
+
+          <div class="card mt-12 flex">
+            <div>
+              <h5 class="text-lg font-bold">02</h5>
+            </div>
+            <div>
+              <p class="ml-6 text-lg">Cultivation Actors</p>
+              <p class="mx-10 text-gray-600">
+                Farmers, fish farmers, fishermen and livestock breeders who
+                carry out cultivation activities.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-down-long"></i>
+            </div>
+          </div>
+
+          <div class="card mt-12 flex">
+            <div>
+              <h5 class="text-lg font-bold">03</h5>
+            </div>
+            <div>
+              <p class="ml-6 text-lg">Agricultural Expert</p>
+              <p class="mx-10 text-gray-600">
+                Farmers, fish farmers, fishermen and livestock breeders who
+                carry out cultivation activities.
+              </p>
+            </div>
+            <div>
+              <i class="fa-solid fa-down-long"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 mt-12">
+        <div></div>
+
+        <div class="col-span-2 grid-cols-2 flex flex-wrap">
+          <div class="card w-2/5 text-start mx-1 p-1 my-3">
+            <img src="https://picsum.photos/id/20/400/300" alt="" />
+            <h5 class="mt-4 font-bold">Partner</h5>
+            <p class="mt-3 text-gray-600">
+              We provide a complete solution for efficient commodity sourcing
+              and farmer monutoring.
+            </p>
+            <button
+              class="border p-2 rounded-xl text-green-700 mt-3"
+              type="submit"
+            >
+              Learn More <i class="fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+
+          <div class="card w-2/5 text-start mx-1 p-1 my-3">
+            <img src="https://picsum.photos/id/21/400/300" alt="" />
+            <h5 class="mt-4 font-bold">Markets</h5>
+            <p class="mt-3 text-gray-600">
+              We provide high quality products to support your business
+              development.
+            </p>
+            <button
+              class="border p-2 rounded-xl text-green-700 mt-3"
+              type="submit"
+            >
+              Learn More <i class="fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+
+          <div class="card w-2/5 text-start mx-1 p-1 my-3">
+            <img src="https://picsum.photos/id/22/400/300" alt="" />
+            <h5 class="mt-4 font-bold">Modal</h5>
+            <p class="mt-3 text-gray-600">
+              Providing access to capital to encourage entrepreneurship in the
+              agricultural sector and support small farmers.
+            </p>
+            <button
+              class="border p-2 rounded-xl text-green-700 mt-3"
+              type="submit"
+            >
+              Learn More <i class="fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+
+          <div class="card w-2/5 text-start mx-1 p-1 my-3">
+            <img src="https://picsum.photos/id/23/400/300" alt="" />
+            <h5 class="mt-4 font-bold">Agrispedia</h5>
+            <p class="mt-3 text-gray-600">
+              Get new knowledge to develop your agricultural business directly
+              from the experts.
+            </p>
+            <button
+              class="border p-2 rounded-xl text-green-700 mt-3"
+              type="submit"
+            >
+              Learn More <i class="fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-950 mx-24 p-10">
+        <div class="relative">
+          <div class="text-white w-3/5">
+            <h1 class="font-bold text-3xl">
+              Find a variety of the latest information about agriculture on
+              Agrispedi
+            </h1>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              dolor reiciendis fugit ratione eligendi facere, quasi repellat
+              iste asperiores unde quas quia, nobis nihil numquam consequatur?
+            </p>
+          </div>
+          <div class="absolute right-0 bottom-0 mb-6 mr-12">
+            <i class="fa-solid fa-angle-left fa-2xl text-white mx-10 "></i>
+            <i class="fa-solid fa-angle-right fa-2xl text-white"></i>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 mt-5">
+            <div class="card text-white w-3/12 sm:w-10/12 mb-5 sm:mb-2">
+                <img src="https://picsum.photos/id/30/300/300" alt="" />
+                <p class="text-gray-600 mt-5">October 23, 2023</p>
+                <h3 class="font-bold text-lg mt-3">
+                    Towards efficient and environmentally friendly agriculture.
+                </h3>
+                <p class="mt-2">
+                    Increase yields without using excessive pesticides by applying modern cultivation methods.
+                </p>
+                <button class="bg-white p-2 text-black rounded-xl mt-3" type="submit">
+                    Read More <i class="fa-solid fa-right-long"></i>
+                </button>
+            </div>
+        
+            <div class="card text-white w-3/12 sm:w-10/12 mb-5 sm:mb-2">
+                <img src="https://picsum.photos/id/31/300/300" alt="" />
+                <p class="text-gray-600 mt-5">October 23, 2023</p>
+                <h3 class="font-bold text-lg mt-3">
+                    The Latest Innovations in the World of Agriculture.
+                </h3>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptas deleniti possimus alias nemo ratione!
+                </p>
+                <button class="bg-white p-2 text-black rounded-xl mt-3" type="submit">
+                    Read More <i class="fa-solid fa-right-long"></i>
+                </button>
+            </div>
+        
+            <div class="card text-white w-3/12 sm:w-10/12 mb-5 sm:mb-2">
+                <img src="https://picsum.photos/id/32/300/300" alt="" />
+                <p class="text-gray-600 mt-5">October 23, 2023</p>
+                <h3 class="font-bold text-lg mt-3">
+                    Strategies for Agricultural Land Yield Enhancement.
+                </h3>
+                <p class="mt-2">
+                    Effective strategies to increase agricultural yields with sustainability.
+                </p>
+                <button class="bg-white p-2 text-black rounded-xl mt-3" type="submit">
+                    Read More <i class="fa-solid fa-right-long"></i>
+                </button>
+            </div>
+        </div>
+        
+      </div>
+
+      <div class="grid grid-cols-2 mt-12 mx-24">
+        <div>
+          <span class="badge text-green-700 bg-green-200 rounded-xl p-1"
+            >Our Achievements</span
+          >
+          <h2 class="text-3xl font-bold mt-4 w-10/12">
+            Improving agriculture through innovative ideas.
+          </h2>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="border-r w-12/12 text-center">
+            <h2 class="font-bold text-5xl text-green-800">71 K</h2>
+            <p>Cultivators have joined agriswara</p>
+          </div>
+
+          <div class="w-12/12 text-center sm:ml-1">
+            <h2 class="font-bold text-5xl text-green-800">250+</h2>
+            <p>Agribusiness companies that have collabrated.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="text-center mt-24">
+          <span class="badge text-green-700 bg-green-200 rounded-xl p-1"
+            >Testimonials</span
+          >
+          <h2 class="font-bold text-6xl">What Customer Says</h2>
+        </div>
+
+        <div class="grid grid-cols-2 ml-36 mt-12">
+          <div class="card border p-2 m-2 w-9/12">
+            <div class="flex">
+              <img
+                class="rounded-full"
+                src="https://placehold.co/60x60"
+                alt=""
+              />
+              <div class="ml-5">
+                <h2 class="font-bold">Floyd Miles</h2>
+                <p class="text-gray-500">
+                  Agricultural Product Quality Supervisor
+                </p>
+              </div>
+            </div>
+            <p class="mt-3">
+              This website has given me deeper insight into the latest farming
+              techniques and practices. I feel more confident in managing my
+              farm now.
+            </p>
+          </div>
+
+          <div class="card border p-2 m-2 w-9/12">
+            <div class="flex">
+              <img
+                class="rounded-full"
+                src="https://placehold.co/60x60"
+                alt=""
+              />
+              <div class="ml-5">
+                <h2 class="font-bold">Jane Cooper</h2>
+                <p class="text-gray-500">Organic Vegetable Farmers</p>
+              </div>
+            </div>
+            <p class="mt-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, modi. Reiciendis nobis rerum maxime delectus? Non ex ab
+              repellat et accusantium a nesciunt earum animi.
+            </p>
+          </div>
+
+          <div class="card border p-2 m-2 w-9/12">
+            <div class="flex">
+              <img
+                class="rounded-full"
+                src="https://placehold.co/60x60"
+                alt=""
+              />
+              <div class="ml-5">
+                <h2 class="font-bold">Jenny Wilson</h2>
+                <p class="text-gray-500">Organic Vegetable Farmers</p>
+              </div>
+            </div>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              obcaecati accusamus reprehenderit doloribus nulla illo quidem
+              similique quam, molestiae assumenda, impedit aspernatur, eius
+              quasi magnam eum eveniet est sint suscipit!
+            </p>
+          </div>
+
+          <div class="card border p-2 m-2 w-9/12">
+            <div class="flex">
+              <img
+                class="rounded-full"
+                src="https://placehold.co/60x60"
+                alt=""
+              />
+              <div class="ml-5">
+                <h2 class="font-bold">Courtney Henry</h2>
+                <p class="text-gray-500">
+                  Agricultural Product Quality Supervisor
+                </p>
+              </div>
+            </div>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+              earum in consequatur porro alias excepturi velit quia, pariatur,
+              ratione quam labore, dolor unde eaque cupiditate quidem? Sit
+              debitis animi rem perspiciatis autem?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="get-involved-section mx-24 flex flex-col items-center">
+        <h2 class="text-white font-bold text-5xl w-6/12 mt-24 sm:mt-10 text-center">
+          Get involved in the agricultural uprising
+        </h2>
+        <div class="mt-12">
+          <input
+            type="text"
+            placeholder="Type your email address"
+            class="rounded-xl p-2"
+          />
+          <button
+            type="submit"
+            class="bg-green-500 rounded-xl p-2 hover:bg-green-700 text-white"
+          >
+            Join Now
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+
+    <footer>
+        <div class="grid grid-cols-5 mx-24 mt-12">
+            <div class="flex flex-col m-1">
+                <h3 class="font-bold text-base sm:text-xs lg:text-base xl:text-base">Agriswara</h3>
+                <p class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1 w-5/6">
+                    Rajawali street NO.45, Magelang New City, Central Java 6745 Indonesia
+                </p>
+                <div class="text-base sm:text-xs lg:text-base xl:text-base">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+    
+            <div class="flex flex-col m-1">
+                <h3 class="font-bold text-base sm:text-xs lg:text-base xl:text-base">Company Category</h3>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Agribusiness</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Financial Services</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">IoT Service Provider</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Educational Institutions</a>
+            </div>
+    
+            <div class="flex flex-col m-1">
+                <h3 class="font-bold text-base sm:text-xs lg:text-base xl:text-base">Individual Category</h3>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Cultivator</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Agricultural Consumers</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Agricultural Expert</a>
+            </div>
+    
+            <div class="flex flex-col m-1">
+                <h3 class="font-bold text-base sm:text-xs lg:text-base xl:text-base">Services</h3>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Partner</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Capital</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Market</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Start Farming</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Agrispedia</a>
+            </div>
+    
+            <div class="flex flex-col m-1">
+                <h3 class="font-bold text-base sm:text-xs lg:text-base xl:text-base">Company</h3>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">About Us</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">Blog</a>
+                <a class="text-slate-600 text-base sm:text-xs lg:text-base xl:text-base my-1" href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script
+      src="https://kit.fontawesome.com/e1bde2bc89.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.getElementById("mobile-menu-toggle").onclick = function () {
+        var menuItems = document.querySelector(".navbar-brand ul");
+        menuItems.classList.toggle("hidden");
+      };
+    </script>
+  </body>
+</html>
