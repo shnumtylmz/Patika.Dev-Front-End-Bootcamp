@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      let myString = "Şahin";
+      let myNumber = 24;
+      let male = true;
+      let scores = [44, 12, 53, 100]
+      console.log(myString + " "  + myNumber + " " + male + " " + scores)
+
+
+      // TOPLAMA
+      function toplama (a, b){
+          return a + b;
+      }
+      console.log(toplama(10, 2));
+
+
+      function cikarma (z, x){
+          return z - x;
+      }
+      console.log(cikarma(8, 6));
+
+      function compare(e ,d){
+          return e > d ? e : d;
+      }
+      console.log(compare(9,5));
+
+
+
+      function tersCevir(str){
+          return str.split('').reverse().join('');
+      }
+      console.log(tersCevir("merhaba dünya!"))
+
+
+
+
+      function kelimeSayisi(str, kelime){
+          return str.split(kelime).length- 1;
+      }
+      console.log(kelimeSayisi("Merhaba dünya çok çok güzel bir yer!" , "çok"))
+
+
+    </script>
+  </body>
+</html>

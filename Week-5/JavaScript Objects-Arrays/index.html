@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    //   CAR EXERCISE
+
+      let car = {
+        carBrand: "Ford", 
+        carModel: "Focus",
+        carYear: 2020 ,
+        carColor: "White",
+      getDetails: function(){
+          return `Car Brand: ${this.carBrand} Car Model: ${this.carModel}, Car Year: ${this.carYear}, Car Color: ${this.carColor}`
+      }
+      };
+
+      console.log(car.getDetails());
+
+
+
+    //   FOR - FOREACH EXERCISE
+
+      let names = ["Şahin", "Umut", "Yılmaz", "Ali", "Veli", "Doğukan"];
+      console.log(names);
+
+      names.push("Şevval");
+      console.log(names);
+
+      names.unshift("İlknur")
+      console.log(names);
+
+      names.pop()
+      console.log(names);
+
+      names.shift()
+      console.log(names);
+
+      for(let i = 0; i < names.length; i++){
+        console.log(names[i]);
+      }
+
+      names.forEach(function(names){
+        console.log(names);
+      })
+    </script>
+</body>
+</html>
