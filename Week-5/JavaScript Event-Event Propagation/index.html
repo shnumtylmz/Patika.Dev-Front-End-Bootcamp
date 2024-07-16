@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 25px;
+        box-sizing: border-box;
+        margin-top: 20px;
+      }
+
+      #div1 {
+        background-color: #999;
+      }
+
+      #div2 {
+        background-color: #777;
+      }
+
+      #div3 {
+        background-color: #444;
+      }
+
+      #div4 {
+        background-color: #999;
+      }
+
+      #div5 {
+        background-color: #777;
+      }
+
+      #div6 {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- EVENTS -->
+    <div>
+      <button id="btn">Click Here</button>
+    </div>
+
+    <div style="margin-top: 10px">
+      <input type="text" id="inputText" />
+    </div>
+
+    <div id="div1">
+      <div id="div2">
+        <div id="div3"></div>
+      </div>
+    </div>
+
+
+    <div id="div4">
+        <div id="div5">
+          <div id="div6"></div>
+        </div>
+      </div>
+
+    <script>
+      // EVENTS
+      const button = document.getElementById("btn");
+      button.addEventListener("click", function () {
+        document.body.style.backgroundColor = "red";
+      });
+
+      const inputElement = document.getElementById("inputText");
+      inputElement.addEventListener("input", function (event) {
+        console.log("Girilen değer konsola yazdırıldı:", event.target.value);
+      });
+
+      // EVENTS PROPAGATION
+
+      const div1 = document.getElementById("div1");
+      div1.addEventListener("click", function () {
+        console.log("div-1 e tıklandı");
+      });
+
+      const div2 = document.getElementById("div2");
+      div2.addEventListener("click", function () {
+        console.log("div-2 e tıklandı");
+      });
+
+      const div3 = document.getElementById("div3");
+      div3.addEventListener("click", function () {
+        console.log("div-3 e tıklandı");
+      });
+
+      const div4 = document.getElementById("div4");
+      div4.addEventListener("click", function () {
+        console.log("div-4 e tıklandı");
+      });
+
+      const div5 = document.getElementById("div5");
+      div5.addEventListener("click", function () {
+         event.stopPropagation();
+      });
+
+      const div6 = document.getElementById("div6");
+      div6.addEventListener("click", function () {
+        console.log("div-6 e tıklandı");
+      });
+    </script>
+  </body>
+</html>
