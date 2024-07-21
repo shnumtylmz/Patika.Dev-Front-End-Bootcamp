@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcoming">
+        <h1>Show your talent!</h1>
+      </div>
+      <div class="all-buttons">
+        <button
+          type="button"
+          class="button"
+          id="button-boom"
+          onclick="audioBoom()"
+        > <span>A</span>
+          Boom
+        </button>
+        <audio
+          onkeydown="audioFirstKey()"
+          id="audio-boom"
+          src="./sounds/boom.wav"
+        ></audio>
+
+        <button
+          type="button"
+          class="button"
+          id="button-hihat"
+          onclick="audioHihat()"
+        >
+          Hihat
+        </button>
+        <audio
+          onkeydown="audioSecKey()"
+          id="audio-hihat"
+          src="./sounds/hihat.wav"
+        ></audio>
+
+        <button
+          type="button"
+          class="button"
+          id="button-openhat"
+          onclick="audioOpenhat()"
+        >
+          Openhat
+        </button>
+        <audio
+          onkeydown="audioThirdKey()"
+          id="audio-openhat"
+          src="./sounds/openhat.wav"
+        ></audio>
+
+        <button
+          type="button"
+          class="button"
+          id="button-boom"
+          onclick="audioRide()"
+        >
+          Ride
+        </button>
+        <audio
+          onkeydown="audioFourthKey()"
+          id="audio-ride"
+          src="./sounds/ride.wav"
+        ></audio>
+
+        <button
+          type="button"
+          class="button"
+          id="button-boom"
+          onclick="audioSnare()"
+        >
+          Snare
+        </button>
+        <audio
+          onkeydown="audioFifthKey()"
+          id="audio-snare"
+          src="./sounds/snare.wav"
+        ></audio>
+
+        <button
+          type="button"
+          class="button"
+          id="button-tink"
+          onclick="audioTink()"
+        >
+          Tink
+        </button>
+        <audio
+          onkeydown="audioSixthKey()"
+          id="audio-tink"
+          src="./sounds/tink.wav"
+        ></audio>
+
+        <button
+          type="button"
+          class="button"
+          id="button-tom"
+          onclick="audioTom()"
+        >
+          Tom
+        </button>
+        <audio
+          onkeydown="audioSevenKey()"
+          id="audio-tom"
+          src="./sounds/tom.wav"
+        ></audio>
+      </div>
+    </div>
+  </body>
+</html>

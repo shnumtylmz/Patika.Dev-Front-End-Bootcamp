@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">HELLO WORLD!</h1>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      voluptas aspernatur vero modi dignissimos placeat itaque necessitatibus ea
+      accusantium. Quibusdam!
+    </p>
+
+    <input type="text" id="input"/>
+    <button id="btn">Click Here</button>
+
+   
+    <img id="img" src="https://picsum.photos/id/10/100/100 " alt="">
+    <script>
+      //   VARIABLES AND DATA TYPES
+
+      // let name = "Sahin";
+      // let lastName = "Yılmaz";
+
+      //   console.log(name + " " + lastName);
+
+      let birthDate = 1999;
+
+      let currentDate = new Date().getFullYear();
+
+      let age = currentDate - birthDate;
+      //   console.log(age);
+
+      // OPERATORS
+
+      let a = 10;
+      let b = 3;
+      //   console.log(a + b);
+      // console.log(a - b);
+      // console.log(a / b);
+      //   console.log(a * b);
+      // console.log(a % b);
+
+      let price = 300;
+      let kdvRate = 20;
+      let kdvAmount = (price * kdvRate) / 100;
+      let totalPrice = price + kdvAmount;
+      //   console.log("KDV dahil fiyat: " + totalPrice);
+      //   console.log("KDV tutarı: " + kdvAmount);
+
+      // CONDITIONAL STATEMENTS
+      let number = 2;
+
+      // if(number % 2 === 0){
+      //     console.log("Bu sayı çifttir: " + number)
+      // } else{
+      //     console.log("Bu sayı tektir: " + number)
+      // }
+
+      let userNickName = "aliveli4950";
+      let userPassword = "1903bjk1903";
+
+      let enteredNick = "aliveli4950";
+      let enteredPassword = "1903bjk1903";
+      //   if(userNickName == enteredNick && userPassword == enteredPassword){
+      //     console.log("Correct!");
+      //   }else{
+      //     console.log("Wrong");
+      //   }
+
+      // LOOPS
+
+      // for(i = 0; i < 11; i++){
+      //     console.log(i)
+      // }
+
+      // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // for(let i = 2; i < numbers.length; i++){
+      //     console.log(numbers[i]);
+      // }
+
+      // FUNCTIONS
+
+      // function printSquare(x){
+      //     console.log("Sayının karesi: " + (x * x));
+      // }
+
+      // let y = 4;
+      // console.log(printSquare(y))
+
+      //    let printing = function(name, lastName){
+      //     return name + " " + lastName;
+      //    }
+
+      //    let name = "Şahin";
+      //    let lastName = "Yılmaz";
+
+      //    console.log(printing(name, lastName))
+
+      // OBJECTS
+
+      // let user = {
+      //     name: "John",
+      //     lastName: "Doe",
+      //     age: 25,
+      //     job: "Developer",
+      // }
+
+      // console.log(user)
+
+      // let book = {
+      //     name: "Chess",
+      //     author: "Stefan Zweig",
+      //     year: 1788,
+      //     genre: "novel",
+      // }
+      // console.log("Book Name: " + book.name);
+      // console.log("Book author: " + book.author);
+      // console.log("Book year: " + book.year);
+      // console.log("Book genre: " + book.genre);
+
+      // ARRAYS
+
+      // let fruits = ["orange", "watermelon", "peach", "apple", "kiwi", "banana"];
+
+      // console.log(fruits[0]);
+      // console.log(fruits[5]);
+
+      // DOM MANIPULATION
+
+      // let header = document.getElementById("header");
+      // header.style.color = "blue";
+
+      // let paragraph = document.getElementById("paragraph");
+      // paragraph.style.fontSize = "10px";
+
+      // BOM MANIPULATION
+
+      // console.log(screen.width);
+      // console.log(screen.height);
+
+      // Sayfa açıldığı zamanı al
+      // let startTime = new Date().getTime();
+
+      // // Her saniye geçen süreyi hesapla ve ekrana yazdır
+      // setInterval(function() {
+      //     let currentTime = new Date().getTime();
+      //     let elapsedTime = currentTime - startTime;
+
+      //     // Elapsed time'i saniye cinsine dönüştürmek için 1000'e böl
+      //     let seconds = Math.floor(elapsedTime / 1000);
+
+      //     console.log("Sayfada geçen süre: " + seconds + " saniye");
+      // }, 1000); // Her saniyede bir çalışacak
+
+      // // veya
+      // setTimeout(function() {
+      //     let currentTime = new Date().getTime();
+      //     let elapsedTime = currentTime - startTime;
+
+      //     // Elapsed time'i saniye cinsine dönüştürmek için 1000'e böl
+      //     let seconds = Math.floor(elapsedTime / 1000);
+
+      //     console.log("Sayfada geçen süre: " + seconds + " saniye");
+      // }, 5000); // 5 saniye sonra çalışacak
+
+      // EVENTS
+
+        // let btn = document.getElementById("btn");
+        // btn.addEventListener("click", function(){
+        //     let input = document.getElementById("input");
+        //     console.log("Input değeri: " + input.value)
+        // })
+
+        // let img = document.getElementById("img");
+        // img.addEventListener("click", function(){
+        //     img.style.height = "300px";
+        // img.style.width = "300px";
+        // });
+
+        
+        
+
+    </script>
+  </body>
+</html>
