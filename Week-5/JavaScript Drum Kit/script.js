@@ -4,19 +4,22 @@ function audioBoom(){
     let audio = document.getElementById("audio-boom");
     audio.play();
     audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-boom"));
 };
 
 function audioFirstKey(event){
     let audio = document.getElementById("audio-boom");
     let key = event.code;
-    document.getElementById("audio-boom");
     if(key === 'KeyA'){
         audio.play();
         audio.currentTime = 0;
-    }
+        triggerAnimation(document.getElementById("button-boom"));
+    }  
 }
 
+
 document.addEventListener('keydown', audioFirstKey);
+
 
 // Second Button
 
@@ -24,6 +27,7 @@ function audioHihat(){
     let audio = document.getElementById("audio-hihat");
     audio.play();
     audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-hihat"));
 };
 
 function audioSecKey(event){
@@ -33,6 +37,7 @@ function audioSecKey(event){
     if(key === 'KeyS'){
         audio.play();
         audio.currentTime = 0;
+        triggerAnimation(document.getElementById("button-hihat"));
     }
 }
 
@@ -46,6 +51,7 @@ function audioOpenhat(){
     let audio = document.getElementById("audio-openhat");
     audio.play();
     audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-openhat"));
 };
 
 function audioThirdKey(event){
@@ -55,6 +61,7 @@ function audioThirdKey(event){
     if(key === 'KeyD'){
         audio.play();
         audio.currentTime = 0;
+        triggerAnimation(document.getElementById("button-openhat"));
     }
 };
 
@@ -66,6 +73,7 @@ function audioRide(){
     let audio = document.getElementById("audio-ride");
     audio.play();
     audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-ride"));
 }
 
 function audioFourthKey(event){
@@ -75,6 +83,7 @@ function audioFourthKey(event){
     if(key === 'KeyF'){
         audio.play();
         audio.currentTime = 0;
+        triggerAnimation(document.getElementById("button-ride"));
     }
 }
 
@@ -86,6 +95,7 @@ function audioSnare(){
     let audio = document.getElementById("audio-snare");
     audio.play();
     audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-snare"));
 }
 
 function audioFifthKey(event){
@@ -95,6 +105,7 @@ function audioFifthKey(event){
     if(key === 'KeyG'){
         audio.play();
         audio.currentTime = 0;
+        triggerAnimation(document.getElementById("button-snare"));
     }
 }
 
@@ -102,37 +113,54 @@ document.addEventListener('keydown', audioFifthKey);
 
 // Sixth Button
 
+function audioTink(){
+    let audio = document.getElementById("audio-tink");
+    audio.play();
+    audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-tink"));
+}
+
+function audioSeventhKey(event){
+    let audio = document.getElementById("audio-tink");
+    let key = event.code;
+    document.getElementById("audio-tink");
+    if(key === 'KeyH'){
+        audio.play();
+        audio.currentTime = 0;
+        triggerAnimation(document.getElementById("button-tink"));
+    }
+}
+
+document.addEventListener('keydown', audioSeventhKey);
+// Seventh Button
+
 function audioTom(){
     let audio = document.getElementById("audio-tom");
     audio.play();
     audio.currentTime = 0;
+    triggerAnimation(document.getElementById("button-tom"));
 }
 
 function audioSixthKey(event){
     let audio = document.getElementById("audio-tom");
     let key = event.code;
     document.getElementById("audio-tom");
-    if(key === 'KeyH'){
+    if(key === 'KeyJ'){
         audio.play();
         audio.currentTime = 0;
+        triggerAnimation(document.getElementById("button-tom"));
     }
 }
 
 
 document.addEventListener('keydown', audioSixthKey);
+fg
 
+// Key Effects
 
-// FINISH
-
-document.addEventListener('keydown', function(e){
-    
-    if(event.key === 'KeyA'){
-        let key = event.code;
-        let button = this.documentElementById("button-boom");
-        button.classList.add("button:active");
-        setTimeout(function(){
-            button.classList.remove("button:active");
-            button.click();
-        }, 100);
-    }
-})
+function triggerAnimation(button){
+    button.classList.add("active");
+    setTimeout(() => {
+        button.classList.remove("active");
+    }, 1000);
+}
