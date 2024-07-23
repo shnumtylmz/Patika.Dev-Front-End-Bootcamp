@@ -182,6 +182,60 @@
 
         
         
+        // JavaScript Asynchronous Programming
+
+        // callBacks
+
+        // function fetchData(callback){
+        //   setTimeout(() => {
+        //     callback("Veri getirildi.");
+        //   }, 1000);
+        // };
+
+        // fetchData((data) => {
+        //   console.log(data)  
+        // })
+        
+
+        // Promises
+
+        // let promise = new Promise((resolve, reject) => {
+        //   setTimeout(() => {
+        //     resolve("Data fetched.");
+        //   }, 3000);
+        // });
+
+        // promise.then((data) => {
+        //   console.log(data);
+        // }).catch((error) => {
+        //   console.log(error);
+        // })
+
+
+        // Async/Await
+
+        // async function fetchData(){
+        //   try{
+        //     let response = await new Promise((resolve, reject) => {
+        //       setTimeout(() =>{
+        //         resolve("Eskişehirspor");
+        //       }, 5000)
+        //     });
+        //     console.log(response);
+        //   } catch(err){
+        //     console.log(err);
+        //   }
+        // }
+
+        //  WEB API
+
+      // Pratik ödev
+      
+      fetch('https://jsonplaceholder.typicode.com/')
+      .then((data) => response.json())
+      .then((data)=> console.log(data))
+      .catch(error => console.log(error))
+      
 
     </script>
   </body>

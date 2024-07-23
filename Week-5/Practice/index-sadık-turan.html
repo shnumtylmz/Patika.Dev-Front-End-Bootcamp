@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sadık Turan JavaScript Practice</h1>
+
+    <script>
+
+          let numbers = [3,5,7,8,12,23,45,66];
+
+          // 1-) Numbers dizinindeki her sayının karesini yazdır.
+
+          // for(let i = 0; i < numbers.length;i++){
+          //     console.log(numbers[i] * numbers[i]);
+          // }
+
+          // 2-) Numbers listesindeki hangi sayılar 5'in katıdır?
+
+          // for(let i = 0; i < numbers.length; i++){
+          //     if(numbers[i] % 5 == 0){
+          //         console.log(numbers[i]);
+          //     }
+          // }
+
+
+          // 3-) 50-100 arasındaki sayıları azalan şekilde yaz.
+
+          // for(let i = 100; i >= 50; i--){
+          //     console.log(i)
+          // }
+
+
+          let products = ["Iphone 16", "Samsung s25", "Iphone 17", "Samsung s26"];
+
+          // 4-) products dizisindeki tüm ürünler büyük harfe çevir.
+
+          // for(let i = 0; i < products.length; i++){
+          //     console.log(products[i].toUpperCase())
+          // }
+
+          // 5-) products dizinin içinde samsung kelimesi geçen kaç kelime vardır ?
+          // let count = 0;
+          // for(let i = 0; i < products.length; i++){
+          //     if(products[i].includes("Samsung")){
+          //         count++;
+          //     }
+          // }
+          // console.log(count + " products found.")
+
+          let students = [
+              {"ad":"Yiğit", "soyad": "Bilgi", "notlar":  [60,70,80]},
+              {"ad":"Ada", "soyad": "Bilgi", "notlar":  [80,50,75]},
+              {"ad":"Çınar", "soyad": "Turan", "notlar":  [70,70,80]},
+      ]
+          // 6-) Students listesindeki her öğrencinin not ortalaması ve başarı durumu yazdırınız.
+
+//           for (let i = 0; i < students.length; i++) {
+//     let scoresToplam = 0;
+//     let count = 0;
+//     let ortalama = 0;
+
+//     for (let x = 0; x < students[i].notlar.length; x++) {
+//         scoresToplam += students[i].notlar[x];
+//         count++;
+//     }
+
+//     ortalama = scoresToplam / count;
+//     console.log(`${students[i].ad} ${students[i].soyad} isimli öğrencinin ortalaması ${ortalama}.`);
+// }
+
+          // 7-) Tüm öğrencilerin not ortalaması nedir?
+
+          for(let i = 0; i < students.length; i++){
+            let ortalama = students[i].notlar;
+            console.log(students[i] / notlar)
+          }
+    </script>
+  </body>
+</html>
