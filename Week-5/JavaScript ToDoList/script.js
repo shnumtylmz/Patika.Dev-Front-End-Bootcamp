@@ -30,6 +30,7 @@ let newElement = () => {
         closeButton(newListItem);
     }
         taskInput.value = "";
+        saveTasks();
 }
 
 const closeButton = (item) => {
@@ -50,6 +51,7 @@ const closeButton = (item) => {
     item.addEventListener("mouseout", () => {
         closeBtn.style.display = "none";
     });
+    saveTasks();
 }
 
 const taskCompleted = (item) => {
@@ -68,6 +70,7 @@ const taskCompleted = (item) => {
             item.style.backgroundColor = "#eee";
             item.style.textDecoration = "none";
         }
+        saveTasks();
     });
 }
 
