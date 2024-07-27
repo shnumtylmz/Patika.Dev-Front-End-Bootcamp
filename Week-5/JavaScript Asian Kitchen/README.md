@@ -18,9 +18,3 @@ The Asian Kitchen Menu project is a web application that displays a menu of vari
 - **Filter by Category**: Filter dishes by Korean, Japanese, or Chinese cuisine.
 - **Responsive Design**: The menu is responsive and adapts to different screen sizes using Bootstrap.
 
-## Getting Started
-
-### Prerequisites
-
-- A modern web browser.
-- Internet connection for loading Bootstrap and Google Fonts.
