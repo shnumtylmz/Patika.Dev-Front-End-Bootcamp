@@ -6,6 +6,8 @@ This is a simple web application that fetches and displays random Chuck Norris j
 
 ![Chuck Norris Generator](sschuck.png)
 
+You can reach the live demo
+
 [Chuck Norris Generator](https://shnumtylmz.github.io/Patika.Dev-Front-End-Bootcamp/Week-5/JavaScript%20Chuck%20Norris%20Jokes/index.html)
 
 ## Features
