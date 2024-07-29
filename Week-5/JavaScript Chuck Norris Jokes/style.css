@@ -1,0 +1,25 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+}
+
+
+.img {
+    height: 500px;
+    width: 500px;
+    filter: drop-shadow(5px 5px 5px #ff8800);
+    margin-top: 30px;
+    
+} 
