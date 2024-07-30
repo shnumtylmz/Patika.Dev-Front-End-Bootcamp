@@ -1,0 +1,14 @@
+#calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.calc-text{
+    width: 30%;
+}
+
+.calc-text h4{
+    font-size: var(--font-size-lg);
+}
