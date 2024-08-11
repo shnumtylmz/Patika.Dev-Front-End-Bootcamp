@@ -8,9 +8,6 @@
 i{
     color: #FFD700;
     cursor: pointer;
-}
-
-i:hover{
-    color: #FFD700;
-    content: "\f005";
+    right: 5%;
+    top: 3%;
 }
