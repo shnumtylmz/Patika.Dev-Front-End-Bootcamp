@@ -1,0 +1,16 @@
+:root{
+    --color-main: #222831;
+    --color-secondary: #31363F;
+    --color-third: #76ABAE;
+    --color-fourth: #EEEEEE;
+}
+
+i{
+    color: #FFD700;
+    cursor: pointer;
+}
+
+i:hover{
+    color: #FFD700;
+    content: "\f005";
+}
