@@ -262,14 +262,12 @@ function updateCardData(title, isFavorited) {
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
-// Favori butonuna tıklama olayını yönetme
 document.getElementById('favBtn').addEventListener('click', function() {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     const favoriteCards = cardData.filter(card => favorites.includes(card.title));
     renderCards(favoriteCards);
 });
 
-// Filtreleme butonları
 document.getElementById("drama").addEventListener('click', function() {
     const dramaCards = cardData.filter(data => data.type === "drama");
     renderCards(dramaCards);
