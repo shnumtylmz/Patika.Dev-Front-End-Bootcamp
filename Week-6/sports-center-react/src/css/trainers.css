@@ -1,0 +1,118 @@
+#trainer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-sky-blue);
+    z-index: -20;
+}
+
+.trainer-cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trainer-card {
+    margin: 3% 3%;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+    border: 1px solid var(--color-orange);   
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.border-top {
+    background-color: var(--color-blue);
+    top: -10px;
+    left: 40%;
+    position: absolute;
+    height: 50px;
+    width: 20%;
+    z-index: -10;
+    transition: width 1s ease, left 1s ease;
+}
+
+.border-right {
+    background-color: var(--color-blue);
+    right: -10px;
+    top: 40%;
+    position: absolute;
+    height: 20%;
+    width: 100px;
+    z-index: -10;
+    transition: height 1s ease, left 1s ease;
+}
+
+.border-bottom {
+    background-color: var(--color-blue);
+    bottom: -10px;
+    left: 40%;
+    position: absolute;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    z-index: -10;
+    transition: width 1s ease, left 1s ease;
+}
+
+.border-left {
+    background-color: var(--color-blue);
+    left: -10px;
+    top: 40%;
+    position: absolute;
+    height: 20%;
+    width: 50px;
+    z-index: -10;
+    transition: height 1s ease, left 1s ease;
+}
+
+.trainer-card-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    bottom: 10%;
+    left: 17%;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    background-color: var(--color-blue);
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.trainer-card:hover .trainer-card-content {
+    opacity: 1;
+}
+
+.trainer-card:hover .border-left {
+    height: 50%;
+    transition: height 0.8s ease;
+}
+
+.trainer-card:hover .border-right {
+    height: 50%;
+    transition: height 0.8s ease;
+}
+
+.trainer-card:hover .border-bottom {
+    width: 50%;
+    left: 25%;
+    transition: width 1s ease, left 1s ease;
+}
+
+.trainer-card:hover .border-top {
+    width: 50%;
+    left: 25%;
+    transition: width 1s ease, left 1s ease;
+}

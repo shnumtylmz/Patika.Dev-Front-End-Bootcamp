@@ -1,0 +1,35 @@
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.buying-cards{
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: var(--text-color-grey);
+}
+
+.buying-cards img{
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.buying-cards h4{
+    font-size: var(--font-size-lg);
+}
+
+.add-list{
+    border-radius: 0 0 10px 10px;
+}
+
+.buying-cards > .add-list:hover{
+    background-color: var(--color-blue);
+    transition: 0.9s ease;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}

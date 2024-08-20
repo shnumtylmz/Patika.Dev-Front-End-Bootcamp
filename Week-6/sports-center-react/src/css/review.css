@@ -1,0 +1,80 @@
+#comments-section {
+    background-color: var(--background-sky-blue);
+    height: 90vh;
+  }
+  
+  .comment-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+  
+  .comment-card {
+    height: 100%;
+    width: 30%;
+    position: relative;
+    margin: 5% 5%;
+  }
+  
+  .comment-top {
+    display: flex;
+  }
+  
+  .comment-top img {
+    border-radius: 100%;
+  }
+  
+  .names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    text-align: start;
+    color: var(--text-color-grey);
+  }
+  
+  .comment-text {
+    position: relative;
+    padding: 10px;
+    background-color: var(--color-blue);
+    margin: 5%;
+    color: white;
+  }
+  
+  .styling-left {
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: #8096bf;
+    height: 50px;
+    width: 60px;
+    left: 0; 
+    bottom: 50;
+    margin-top: 10px;
+  }
+  
+  .styling-right {
+    position: absolute;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    background-color: #8096bf;
+    height: 50px;
+    width: 60px;
+    right: 0;
+    bottom: 50;
+    margin-top: 10px;
+  }
+  
+
+  @media screen and (max-width: 576px) {
+    .comment-card {
+      height: 80%;
+      width: 100%;
+      margin: 5% 5%;
+    }
+
+    #comments-section{
+      height: 120vh;
+    }
+  }
+  

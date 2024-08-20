@@ -1,0 +1,139 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    height: auto;
+    background-color: var(--background-sky-blue);
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 15px 10px; 
+    width: 16rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    box-sizing: border-box; 
+}
+
+.card span{
+    font-size: var(--font-size-lg);
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.card p{
+    font-size: var(--font-size-md);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#info-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(240deg, #f6f6f6 55%,  #ffffff 50%);
+}
+
+#lessons-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+#lessons-button button{
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    height: 4rem;
+    width: 5rem;
+}
+
+#lessons-button button:hover{
+    background-color: var(--color-orange);
+    transition: background-color 0.5s ease;
+}
+
+#lessons-button button.active{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 68% 85%, 50% 100%, 32% 85%, 0% 85%);
+    background-color: var(--color-orange);
+    transition: background-color 0.5s ease;
+    width: 5rem;
+    height: 4rem;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: -0.8rem;
+}
+
+
+#lessons-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 25% 5% 25%;
+    color: var(--text-color-grey);
+}
+
+.lessons-text{
+    width: 50%;
+}
+
+.lessons-text h4{
+    margin: 10px;
+    text-align: start;
+    font-size: var(--font-size-lg);
+}
+
+.lessons-text p{
+    margin: 15px;
+    text-align: justify;
+}
+
+.lessons-img img{
+    margin: 50px auto auto 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .lessons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 1% 5% 1%;
+    }
+
+    .lessons-text{
+        width: 100%;
+    }
+
+    #lessons-button{
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    #lessons-button button{
+        height: 4rem;
+        margin: 3% auto;
+        width: 5rem;
+    }
+}

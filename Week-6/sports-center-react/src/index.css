@@ -1,0 +1,60 @@
+@import url(./hero.css);
+@import url(./info.css);
+@import url(./calculator.css);
+@import url(./trainers.css);
+@import url(./purchase.css);
+@import url(./review.css);
+@import url(./form-survey.css);
+@import url(./footer.css);
+
+
+:root{
+    --color-orange: #f39c12;
+    --color-blue: #355592;
+    --background-sky-blue: #f1f8ff;
+    --background-beige: #f6f6f6;
+    --text-color-grey:#4e4e4e;
+    --font-size-sm : 0.8rem;
+    --font-size-def: 1rem;
+    --font-size-md: 1.2rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xlg: 3rem;
+    --font-size-2xlg: 4rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.section-top{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-top h3{
+    margin-top: 2rem;
+    font-size: var(--font-size-xlg);
+    color: var(--color-blue);
+}
+
+.section-top p{
+    width: 25rem;
+    text-align: center;
+    color: #4e4e4e;
+}
+
+.separator{
+    height: 5px;
+    width: 5rem;
+    margin: 1rem 0 1rem 0;
+    background-color: var(--color-orange);
+    border-radius: 2px;
+}

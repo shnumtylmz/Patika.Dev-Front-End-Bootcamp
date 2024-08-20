@@ -218,14 +218,13 @@ function renderCards(data) {
                 <div class="card-body">
                     <h5 class="card-title">${cardDataItem.title}</h5>
                     <p class="card-text">${cardDataItem.description}</p>
-                    <a href="#" class="btn btn-primary">Get Details</a>
+                    <a href="#" class="btn btn-primary" id="getDetails">Get Details</a>
                 </div>
             </div>
         `;
         cardsContainer.innerHTML += cardHTML;
     });
 
-    // Favori ikonlarına olayları ekle
     document.querySelectorAll('.star-icon').forEach(starIcon => {
         starIcon.addEventListener('mouseover', function() {
             this.classList.remove('fa-solid');
@@ -244,10 +243,8 @@ function renderCards(data) {
     });
 }
 
-// Card verilerini oluştur ve ekle
 renderCards(cardData);
 
-// Favori verilerini güncelleme ve localStorage'a kaydetme
 function updateCardData(title, isFavorited) {
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
@@ -286,4 +283,31 @@ document.getElementById("comedy").addEventListener('click', function() {
 document.getElementById("thriller").addEventListener('click', function() {
     const thrillerCards = cardData.filter(data => data.type === "thriller");
     renderCards(thrillerCards);
+});
+
+
+document.getElementById("getDetails").addEventListener("click", () => {
+    localStorage.setItem("selectedCard", JSON.stringify(cardData));
+    window.location.href = "product.html";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cardDataItem = JSON.parse(localStorage.getItem("selectedCard"));
+
+    if (cardDataItem) {
+        const cardHTML = `
+        <div class="card mx-4 mt-2" style="width: 18rem;">
+                <div style="position: relative;">
+                    <img class="card-img-top" src="${cardData.image}" alt="Card image cap">
+                    <i style="position: absolute; top: 10px; right: 10px;" class="fa-solid fa-star star-icon ${cardData.isFavorited ? 'favorited' : ''}"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">${cardData.title}</h5>
+                    <p class="card-text">${cardData.description}</p>
+                    <a href="#" class="btn btn-primary" id="getDetails">Get Details</a>
+                </div>
+            </div>
+        `;
+        document.getElementById("card-container").innerHTML = cardHTML;
+    }
 });
