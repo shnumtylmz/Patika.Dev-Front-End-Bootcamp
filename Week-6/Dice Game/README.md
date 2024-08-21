@@ -1,8 +1,26 @@
-# React + Vite
+# Dice Game 🎲
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Dice Game! This simple game allows you to play against the computer by rolling dice. The player with the highest roll wins!
 
-Currently, two official plugins are available:
+[Live Demo](https://shnumtylmz.github.io/Week-6/Dice%20Game/index.html)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Game Description](#game-description)
+- [Features](#features)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Game Description
+
+The Dice Game is a fun and straightforward game where you and the computer take turns rolling a die. Each roll generates a random number between 1 and 6, representing the sides of a die. The player with the higher number wins the round. The game can be extended to include multiple rounds and a scoring system.
+
+## Features
+
+- Roll the dice and see if you can beat the computer.
+- Visual representation of dice with images for each face (1 to 6).
+- Instant feedback on the winner of each round.
+- Simple and intuitive user interface.
