@@ -39,6 +39,7 @@
     align-items: center;
     text-align: center;
     background: linear-gradient(240deg, #f6f6f6 55%,  #ffffff 50%);
+    height: 100vh;
 }
 
 #lessons-button{

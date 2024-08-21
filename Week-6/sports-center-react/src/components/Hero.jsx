@@ -1,39 +1,48 @@
 import { useEffect } from 'react';
-import "../css/hero.css";
 
 
 function Hero() {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('#header');
-      if (window.scrollY > 50) {
-        navbar.style.backgroundColor = '#355592';
-      } else {
-        navbar.style.backgroundColor = 'transparent';
+      if (navbar) {
+        if (window.scrollY > 50) {
+          navbar.style.backgroundColor = '#355592';
+        } else {
+          navbar.style.backgroundColor = 'transparent';
+        }
       }
     };
 
     const handleNavbarClick = (e) => {
       e.stopPropagation();
       const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('show');
+      if (navbar) {
+        navbar.classList.toggle('show');
+      }
     };
 
     const handleDocumentClick = (e) => {
       const navbar = document.getElementById('navbar');
-      if (!navbar.contains(e.target)) {
+      if (navbar && !navbar.contains(e.target)) {
         navbar.classList.remove('show');
       }
     };
 
+    const navbarBars = document.getElementById('navbar-bars');
+    if (navbarBars) {
+      navbarBars.addEventListener('click', handleNavbarClick);
+    }
+
     window.addEventListener('scroll', handleScroll);
-    document.getElementById('navbar-bars').addEventListener('click', handleNavbarClick);
     document.addEventListener('click', handleDocumentClick);
 
     // Cleanup function to remove event listeners
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      document.getElementById('navbar-bars').removeEventListener('click', handleNavbarClick);
+      if (navbarBars) {
+        navbarBars.removeEventListener('click', handleNavbarClick);
+      }
       document.removeEventListener('click', handleDocumentClick);
     };
   }, []);

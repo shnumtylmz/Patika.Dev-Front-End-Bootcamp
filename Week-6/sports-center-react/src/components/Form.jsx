@@ -39,8 +39,7 @@ function Form() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.7697067081394!2d30.49799721217589!3d39.78972327142847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc15e764f733f3%3A0x391f6eb0cc92ce01!2sAnadolu%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1722443319084!5m2!1str!2str"
             width="400"
             height="300"
-            style="border: 0; margin-top: 50px"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

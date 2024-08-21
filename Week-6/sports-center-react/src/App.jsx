@@ -6,6 +6,7 @@ import Info from './components/Info';
 import Purchase from './components/Purchase';
 import Review from './components/Review';
 import Trainers from './components/Trainers';
+import './App.css';
 
 function App() {
   
@@ -23,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
