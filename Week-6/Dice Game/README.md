@@ -2,7 +2,7 @@
 
 Welcome to the Dice Game! This simple game allows you to play against the computer by rolling dice. The player with the highest roll wins!
 
-[Live Demo](https://shnumtylmz.github.io/Week-6/Dice%20Game/index.html)
+[Live Demo](https://shnumtylmz.github.io/Patika.Dev-Front-End-Bootcamp/Week-6/Dice%20Game/index.html)
 
 ## Table of Contents
 
