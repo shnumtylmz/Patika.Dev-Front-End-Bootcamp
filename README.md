@@ -4,4 +4,4 @@ The experiences and work I've gained on this journey, which I began with the Pat
 ## Projects
 Here you can find a variety of projects that showcase my skills and interests. Feel free to check out the live demos and explore the code. I'm always open to feedback and collaboration opportunities!
 
-[Live Demo](https://shnumtylmz.github.io/Patika.Dev-Front-End-Bootcamp/)
+[Live Demo](https://shnumtylmz.github.io/Week-6/sports-center-react/index.html)
