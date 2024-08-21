@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import logo from '../../public/Images/logo.png';
 
 function Hero() {
   useEffect(() => {
@@ -50,7 +50,7 @@ function Hero() {
   return (
     <>
       <header id="header">
-        <img src="../public/Images/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
         <nav id="navbar">
           <a href="#hero-section">Home</a>
           <a href="#course-info">Classes</a>
