@@ -20,7 +20,7 @@ function App() {
     setIsThrowing(true);
     setWinner('');
 
-    // Simulate dice roll
+ 
     setTimeout(() => {
       let userRes = Math.floor(Math.random() * 6 + 1);
       let pcRes = Math.floor(Math.random() * 6 + 1);
@@ -37,7 +37,7 @@ function App() {
       }
 
       setIsThrowing(false);
-    }, 3000); // 3 seconds delay for animation effect
+    }, 3000); 
   };
 
   return (
