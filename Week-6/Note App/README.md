@@ -4,7 +4,7 @@ Note App is a simple React application that allows users to add notes in differe
 
 ## Live Demo
 
-You can view a live demo of the project here: [Note App Live Demo](patika-dev-front-end-bootcamp-vfbc-eoz3rz38c.vercel.app)
+You can view a live demo of the project here: [Note App Live Demo](https://patika-dev-front-end-bootcamp-vfbc-jd8w5xbjs.vercel.app)
 
 
 ## Features
