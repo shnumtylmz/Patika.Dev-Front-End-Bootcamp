@@ -2,7 +2,7 @@
 
 Welcome to the Dice Game! This simple game allows you to play against the computer by rolling dice. The player with the highest roll wins!
 
-[Live Demo](https://patika-dev-front-end-bootcamp-f0sn8mqy9.vercel.app)
+[Live Demo](https://patika-dev-front-end-bootcamp-1rp3jq5t1.vercel.app)
 
 ## Table of Contents
 
