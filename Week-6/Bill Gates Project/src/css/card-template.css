@@ -1,20 +1,15 @@
-    .product-list-container{
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .products-flex{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .total-money{
-      padding: 30px;
-      background-color: #b2bec3;
-      text-align: center;
-    }
+  /* TOTAL MONEY CSS */
+  .total-money{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  .card-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
     .card{
       border: 1px solid #ccc;
