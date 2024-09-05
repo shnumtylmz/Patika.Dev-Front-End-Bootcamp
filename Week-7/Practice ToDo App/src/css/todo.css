@@ -1,0 +1,26 @@
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.todo-checkbox{
+    margin-right: 10px;
+}
+
+.todo{
+    margin-left: 10px;
+}
+
+.todo-btn{
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    opacity: 0.4;
+    background-color: transparent;
+    color: #fc0000;
+    cursor: pointer;
+}
+
+

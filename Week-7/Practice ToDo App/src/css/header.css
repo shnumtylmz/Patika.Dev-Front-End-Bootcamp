@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title{
+    color: rgb(218, 136, 153);
+    opacity: 0.5;
+    font-size: 120px;
+}
+
+.input-section{
+    background-color: rgb(252, 253, 255);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.header-icon{
+    font-size: 22;
+    color: black;
+}
+
+.input-section input{
+    color: black;
+    background-color: white;
+    height: 30px;
+    border: none;
+    margin-left: 10px;
+    
+}
