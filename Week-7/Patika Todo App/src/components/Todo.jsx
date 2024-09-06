@@ -1,3 +1,5 @@
+// src/components/Todo.js
+
 import React, { useState } from "react";
 
 const Todo = ({
@@ -33,31 +35,31 @@ const Todo = ({
             : "block",
       }}
     >
-      <div className="view">
+      <div className={isEditing ? "view hidden" : "view"}>
         <input
           className="toggle"
           type="checkbox"
           checked={todo.completed}
           onChange={() => handleCheckbox(index)}
         />
-        {isEditing ? (
-          <input
-            type="text"
-            value={editedText}
-            onChange={handleTextChange}
-            onBlur={handleEditSave}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                handleEditSave();
-              }
-            }}
-            autoFocus
-          />
-        ) : (
-          <label onClick={() => setIsEditing(true)}>{todo.text}</label>
-        )}
+        <label onClick={() => setIsEditing(true)}>{todo.text}</label>
         <button className="destroy" onClick={() => deleteTodo(index)}></button>
       </div>
+      {isEditing && (
+        <input
+          className="edit-input"
+          type="text"
+          value={editedText}
+          onChange={handleTextChange}
+          onBlur={handleEditSave}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleEditSave();
+            }
+          }}
+          autoFocus
+        />
+      )}
     </li>
   );
 };
